@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+	id="romeo-resources-cordova"
+	version="0.0.1">
+
+	<name>Exentriq Talk resources</name>
+	<description>Exentriq Talk resources</description>
+	<license></license>
+	<keywords></keywords>
+	<repo></repo>
+
+	<engines>
+		<engine name="cordova" version=">=3.0.0" />
+	</engines>
+
+	<!-- android -->
+	<platform name="android">
+		<resource-file src="src/android/res/drawables/ic_notification_ldpi.png" target="res/drawable-ldpi/ic_launcher.png" />
+		<resource-file src="src/android/res/drawables/ic_notification_hdpi.png" target="res/drawable-hdpi/ic_launcher.png" />
+		<resource-file src="src/android/res/drawables/ic_notification_mdpi.png" target="res/drawable-mdpi/ic_launcher.png" />
+		<resource-file src="src/android/res/drawables/ic_notification_xhdpi.png" target="res/drawable-xhdpi/ic_launcher.png" />
+	</platform>
+
+	<platform name="ios">
+	    <feature name="PushPlugin">
+	        <param name="ios-package" value="PushPlugin" />
+	    </feature>
+	</platform>
+</plugin>
